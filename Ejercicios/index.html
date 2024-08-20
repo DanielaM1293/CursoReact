@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM</title>
+    <style>
+        body {
+            background-color: rgb(181, 136, 222);
+            color: whitesmoke;
+            margin: 7rem;
+        }
+        .p {
+            font-size: 50px;
+            color: beige;
+            font-weight: bold;
+        }
+        button {
+            padding: 4rem;
+            border-radius: 15px;
+            box-shadow: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daniela Martínez</h1>
+        <p id="parr" class="p">Me gusta el ajíaco</p>
+    </header>
+    <section>
+        <button id="miBoton">Click</button>
+    </section>
+    <script>
+        const boton = document.getElementById("miBoton");
+        const parrafo = document.getElementById("parr");
+
+        boton.addEventListener("click", function() {
+            parrafo.textContent = "y el arroz con pollo";
+        });
+    </script>
+</body>
+</html>

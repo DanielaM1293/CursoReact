@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+#countryImage {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+}
