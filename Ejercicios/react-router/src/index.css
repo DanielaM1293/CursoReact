@@ -1,0 +1,19 @@
+@media (prefers-reduced-motion){
+
+}
+.card {
+    padding: 2rem;
+
+}
+.read-the-docs{
+    color: rgb(240, 241, 255);
+}
+.menu {
+    display: flex;
+    justify-content:  space-evenly;
+
+}
+.active-link {
+    border-bottom:thin solid black;
+
+}

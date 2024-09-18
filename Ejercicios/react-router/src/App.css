@@ -1,0 +1,20 @@
+@media (prefers-reduced-motion) {
+  /* Puedes añadir aquí reglas para reducir el movimiento si es necesario */
+}
+
+.card {
+  padding: 2rem;
+}
+
+.read-the-docs {
+  color: rgb(240, 241, 255);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.active-link {
+  border-bottom: thin solid black;
+}
