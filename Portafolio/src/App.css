@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* En index.css o App.css */
+body {
+    @apply bg-black text-white;
+  }
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotateY-180 {
+    transform: rotateY(180deg);
+  }
+  .bg-gray-900 {
+    background-color: #1a202c; /* Color oscuro */
+  }
+  
+  .text-white {
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  .bg-white {
+    background-color: #ffffff; /* Color claro */
+  }
+  
+  .text-black {
+    color: #000000; /* Texto negro */
+  }
+  /* styles.css */
+.bubble {
+  position: absolute;
+  bottom: -50px; /* Para que comiencen desde abajo */
+  animation-name: float;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh); /* Se eleva por toda la altura de la ventana */
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
